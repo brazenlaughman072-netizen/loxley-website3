@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loxley Connect</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Loxley Connect</h1>
+    <nav>
+      <button onclick="scrollToSection('timeline')">Timeline</button>
+      <button onclick="scrollToSection('stories')">Stories</button>
+      <button onclick="scrollToSection('gallery')">Gallery</button>
+      <button onclick="scrollToSection('about')">About</button>
+    </nav>
+  </header>
+
+  <!-- LANDING / NAVIGATION HUB -->
+  <section class="landing">
+    <div class="rectangle top-left" onclick="scrollToSection('timeline')">Timeline</div>
+    <div class="rectangle top-right" onclick="scrollToSection('stories')">Stories</div>
+    <div class="rectangle bottom-left" onclick="scrollToSection('gallery')">Gallery</div>
+    <div class="rectangle bottom-right" onclick="scrollToSection('about')">About</div>
+    <div class="circle-center">Loxley</div>
+  </section>
+
+  <!-- TIMELINE SECTION -->
+  <section id="timeline">
+    <h2>Loxley Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-event">
+        <div class="timeline-date">1870s</div>
+        <div class="timeline-content">
+          <p>John Loxley opens a lumber camp, the foundation of the town.</p>
+          <div class="timeline-img">[Photo Placeholder]</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="timeline-date">1904</div>
+        <div class="timeline-content">
+          <p>Loxley becomes a recognized community within Baldwin County, Alabama.</p>
+          <div class="timeline-img">[Photo Placeholder]</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="timeline-date">1920s</div>
+        <div class="timeline-content">
+          <p>First school built in the community, serving children of local families.</p>
+          <div class="timeline-img">[Photo Placeholder]</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="timeline-date">1950s</div>
+        <div class="timeline-content">
+          <p>Community expands with new businesses and roads connecting to nearby towns.</p>
+          <div class="timeline-img">[Photo Placeholder]</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="timeline-date">1970s</div>
+        <div class="timeline-content">
+          <p>Loxley hosts its first community festival, celebrating local culture.</p>
+          <div class="timeline-img">[Photo Placeholder]</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="timeline-date">2000s</div>
+        <div class="timeline-content">
+          <p>Population growth increases, and Loxley begins modernizing community services.</p>
+          <div class="timeline-img">[Photo Placeholder]</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="timeline-date">2025</div>
+        <div class="timeline-content">
+          <p>Loxley continues celebrating its history while embracing community events and arts.</p>
+          <div class="timeline-img">[Photo Placeholder]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES SECTION -->
+  <section id="stories">
+    <h2>Community Stories</h2>
+    <div class="story-input">
+      <textarea id="storyText" placeholder="Share your story..."></textarea>
+      <input type="file" id="storyImage">
+      <button onclick="postStory()">Post Story</button>
+    </div>
+    <div id="storyFeed" class="story-feed"></div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">[Photo Placeholder]</div>
+      <div class="gallery-item">[Photo Placeholder]</div>
+      <div class="gallery-item">[Photo Placeholder]</div>
+      <div class="gallery-item">[Photo Placeholder]</div>
+    </div>
+  </section>
+
+  <!-- ABOUT / HISTORY SECTION -->
+  <section id="about">
+    <h2>About Loxley</h2>
+    <p>Loxley, Alabama began as a lumber camp and grew into the vibrant community it is today. Located in Baldwin County, it has a rich history of families, local businesses, and community events.</p>
+    <div class="about-img">[Photo Placeholder]</div>
+  </section>
+</body>
+</html>
